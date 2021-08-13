@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "preconstruct build",
+    "build": "node api.js && preconstruct build",
     "build:docs": "yarn build && yarn workspace docs build",
     "serve:docs": "yarn build:docs && yarn workspace docs serve",
     "dev:docs": "yarn workspace docs start",
